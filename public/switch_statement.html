@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Switch Statement</title>
+</head>
+
+<body>
+
+<script>
+
+var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
+var color = colors[Math.floor(Math.random()*colors.length)];
+
+switch (color) {
+
+	case "Red":
+        console.log("You are an apple!");
+        break;
+    case "Orange":
+        console.log("You are an orange!");
+        break;
+    case "Yellow":
+        console.log("You are a banana!");
+        break;
+    case "Green":
+        console.log("You are a lime!");
+        break;
+    case "Blue":
+        console.log("You are a blueberry!");
+        break;
+    default:
+        console.log("I do not know what you are! =[ ");
+}
+
+</script>
