@@ -7,36 +7,38 @@
 
 <script>
 
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var colors = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet'];
 var color = colors[Math.floor(Math.random()*colors.length)];
 
-var favorite = 'green'; // todo, change this to your favorite color from the list
+var favorite = 'Green'; // todo, change this to your favorite color from the list
 
 var message;
 
-if (color === 'red') 
+if (color === 'Red') 
 	{
     	message = "You got the color of an apple!";
 } 
-else if (color === 'orange') 
+else if (color === 'Orange') 
 	{
     	message = "You got the color of a basketball!";
 }
-else if (color === 'yellow') 
+else if (color === 'Yellow') 
 	{
 		message= "You got the color of a lemon!"
 	}
-else if (color === 'green')
+else if (color === 'Green')
 	{ 
-		message= "You got my favorite color, green!"
+		message= "You got the color of grass!"
 	}
-else if (color === 'water')
+else if (color === 'Blue')
 	{ 
 		message = "You got the color of water!"
 	}
 else {
 	message = "I do not know anything by that color, sorry!"
 }
+
+message += (color === favorite) ? " Green is my favortie color!" : " That is not my favorite color!";
 
 console.log(message)
 
