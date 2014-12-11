@@ -1,14 +1,5 @@
-<html>
-<head>
-    <title>External JS</title>
-</head>
-<body>
+console.log('Hello World');
 
+var number = 5;
 
-<script> console.log("Hello from external JavaScript!");
-
-</script>
-
-</body>
-</html>
-
+console.log(number);
