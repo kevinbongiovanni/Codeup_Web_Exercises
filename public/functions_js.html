@@ -34,11 +34,11 @@ console.log(name);
 // just know that it genrates a random number between 1 and 100
 var random = Math.floor((Math.random()*100)+1);
 
-function isOdd(random){
-	var message = (random % 2 == 0) ? random + "is even" : random + "is odd";
+function isOdd(number){
+	return (number % 2 == 0) ? number + " is even" : number + " is odd";
 }
 
-console.log(random)
+console.log(random + ' : ' + isOdd(random))
 
 // todo:
 // Create a function called 'isOdd' that takes a number as a parameter.
