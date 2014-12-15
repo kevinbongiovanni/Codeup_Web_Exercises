@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Classroom Array</title>
+</head>
+
+<body>
+
+<script>
+
+var classroom = [
+	'Nicole',
+	'Calvin',
+	'Felice',
+	'David',
+	'Kevin',
+	'Michael',
+	'Stephanie',
+	'Paul',
+	'Chris',
+	'Jeff',
+	'Marissa',
+	'Travis',
+];
+
+
+// classroom.forEach(function (value, key, array) {
+// 	console.log('The name at index ' + key + ' is: ' + value);
+// });
+//Loop through classmanets when you get to your name
+//say that its me
+//when you get to your neighbor say they help m
+
+for (var i = 0; i < classroom.length; i++) {
+  student = classroom[i];
+
+  if (student == 'Kevin') {
+  	console.log(student + ", that is my name!")
+  }
+  else if (student == 'Michael') {
+  	console.log(student + " is my neighbor, don't mess with him!")
+  }
+  else {
+	  console.log(student);
+}
+}
+</script>
+</body>
