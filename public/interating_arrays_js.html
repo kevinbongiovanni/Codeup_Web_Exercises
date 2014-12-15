@@ -29,9 +29,17 @@ console.log('The third name is: ' + names[2]);
 
 console.log('The fourth name is: ' + names[3]);
 
+
+names.forEach(function (value, key, array) {
+	console.log('The name at index ' + key + ' is: ' + value);
+});
+
+for (var i = 0; i < names.length; ++i) {
+    console.log('The name at index ' + i + ' is: ' + names[i]);
+   }
+
 </script>
 </body>
-
 
 
 
