@@ -1,0 +1,105 @@
+<html>
+<head>
+    <title>Objects JSON</title>
+</head>
+
+<body>
+
+<script>
+
+
+// todo:
+// Create an array of objects that represent books.
+// Each book should have a title and an author.
+// The book author should be an object with a firstName and lastName.
+// Be creative and add at least 5 books to the array
+// var books = [todo];
+var books = [
+{ 
+	"title" : "Forrest Gump",
+	"year" : 1986,
+	"pages" : 228,
+	"author" : {
+		"firstName" : "Winston",
+		"lastName" : "Groom"
+	},
+	"coverAuthor" : {
+		"first" : "Bill",
+		"last" : "Creevy"
+	}	
+},
+
+{	
+	"title" : "To Kill a Mockingbird",
+	"year" : 1960,
+	"pages" : "Hard Copy : " + 336,
+	"author" : {
+		"firstName" : "Harper",
+		"lastName" : "Lee"
+	}
+},
+
+{
+
+	"title" : "The Hobbit",
+	"year" : 1937,
+	"pages" : "Hard Copy : " + 330,
+	"author" : {
+		"firstName" : "J.R.R",
+		"lastName" : "Tolkien"
+	},
+	"coverAuthor" : "Same as Author"	
+},
+
+{
+
+	"title" : "The Great Gatsby",
+	"year" : 1925,
+	"pages" : 180,
+	"author" : {
+		"firstName" : "F. Scott",
+		"lastName" : "Fitzgerald"
+	},
+	"coverAuthor" : {
+		"first" : "Francis",
+		"last" : "Cugat"
+	}
+},
+	
+{
+	"title" : "The Odyssey",
+	"year" : "~ end of 8th Century B.C",
+	"pages" : "12,110 lines of dactylic hexameter",
+	"author" : "Homer"
+},
+
+];
+
+// log out the books array
+console.log(books);
+
+// for(index in classroom) {
+// 	console.log(classroom[index].title);
+// }
+
+// todo:
+// Loop through the array of books using .forEach and print out the specified information about each one.
+// start loop here
+books.forEach(function(element, index, array) {
+
+	var book_number = index + 1;
+    console.log(element.title);
+    console.log(element.author);
+    console.log(element.coverAuthor);
+    console.log(element.year);
+    console.log(element.pages);
+    console.log("--------------------------");
+// end loop here
+
+});
+
+
+
+
+</script>
+</body>
