@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Objects JSON</title>
+</head>
+
+<body>
+
+<script>
+
+var movies = [
+{
+	"title": "Kickin' It Old Skool",
+	"year": 2007,
+	"rating": "pg-13",
+	"length": 108,
+	"metascore": 18,
+	"director": "Harvey Glazer",
+	"description": "A young breakdancer hits his head during a talent show and slips into a coma for twenty years. Waking up in 2006, he looks to revive his and his team's career with the help of his girlfriend and his parents."
+},
+{
+	"title": "Grease",
+	"year": 1978,
+	"rating": "pg-13",
+	"length": 110,
+	"metascore": 70,
+	"director": "Randal Kleiser",
+	"description": "Good girl Sandy and greaser Danny fell in love over the summer. But when they unexpectedly discover they're now in the same high school, will they be able to rekindle their romance?"
+},
+{
+	"title" : "Forrest Gump",
+	"year" : "1994",
+	"rating" : "pg-13",
+	"length" : 142,
+	"metascore" : 82,
+	"director" : "Robert Zemeckis",
+	"description" : "Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him."
+},
+{
+	"title" : "Malibu's Most Wanted",
+	"year" : "2003",
+	"rating" : "pg-13",
+	"length" : 86,
+	"metascore" : 43,
+	"director" : "John Whitesell",
+	"description" : "A senator arranges for his son, a rich white kid who fancies himself black, to be kidnapped by a couple of black actors pretending to be murderers to try and shock him out of his plans to become a rapper."
+},
+{
+	"title" : "Kicking & Screaming",
+	"year" : "2005",
+	"rating" : "pg",
+	"length" : 95,
+	"metascore" : 45,
+	"director" : "Jesse Dylan",
+	"description" : "Family man Phil Weston, a lifelong victim of his father's competitive nature, takes on the coaching duties of a kids' soccer team, and soon finds that he's also taking on his father's dysfunctional way of relating."
+}
+];
+
+// Title (year) | rating
+// length: 25 | metascore
+// director
+// description
+// ===============================
+
+movies.forEach(function(element, index, array){
+console.log(element.title + "(" + element.year + ")" + " | " + element.rating);
+console.log(element.length);
+
+if(element.rating == 'pg-13') {
+	console.warn('You must be 13 or have an adult');
+}
+console.log('===============================');
+});
+
+
+
+
+
+
+
+</script>
+</body>
