@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Objects JSON</title>
+</head>
+
+<body>
+
+<script>
+
+// create a circle object
+var circle = {
+    radius: 3,
+    getArea: function () {
+        // todo: finish this method
+       var area = 3.14159 * Math.pow(this.radius,2);
+        // hint: area = pi * radius^2
+        return area; // todo: return data
+    },
+    logInfo: function (round) {
+        // todo: complete this method. if round is true, round the result to the nearest integer.
+
+        if (round) {
+            console.log('Going to round this answer!')
+            var roundedNumber = (Math.round(this.getArea()));
+        }
+        else {
+            console.log("This answer is not going to get rounded!")
+            var roundedNumber = (this.getArea());
+        }
+
+        console.log('Area of a circle with radius: ' + this.radius + ', is: ' + roundedNumber);
+}
+}
+
+// log info about the circle
+circle.logInfo(false);
+circle.logInfo(true);
+
+// todo:
+// Change the radius of the circle to 5.
+var circle = {
+    radius: 5,
+    getArea: function () {
+        // todo: finish this method
+        var area = 3.14159 * Math.pow(this.radius,2);
+        // hint: area = pi * radius^2
+        return area; // todo: return data
+    },
+    logInfo: function (round) {
+        // todo: complete this method. if round is true, round the result to the nearest integer.
+        if (round) {
+            console.log('Going to round this answer!')
+            var roundedNumber = (Math.round(this.getArea()));
+        }
+        else {
+            console.log("This answer is not going to get rounded!")
+            var roundedNumber = (this.getArea());
+        }
+
+        console.log('Area of a circle with radius: ' + this.radius + ', is: ' + roundedNumber);
+}
+
+};
+
+// log info about the circle
+circle.logInfo(false);
+circle.logInfo(true);
+
+</script>
+</body>
