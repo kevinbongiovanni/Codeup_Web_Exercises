@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>National Parks</title>
+    <style>
+        
+        .invisible {
+            display: none;
+        }
+        .list {
+            font-weight: bold;
+            /*background-color: #0F0;*/
+        }
+    </style>
+    <script src="/js/jquery.min.js"></script>
+    <script>
+
+        // $('document').ready(function() {
+        //     $('#invisible').click(function(event) {
+        //         event.preventDefault();
+        //         $('dd').toggle('.invisible');
+        //     });
+        //     $('dt').click(function() {
+        //         $(this).next().toggle('.invisible');
+        //     });
+        //     $('li').first().addClass('list');
+        //     $('ul').each(function() {
+        //         $(this).children().first().addClass('list');
+        //     });
+        //     $('ul').click(function() {
+        //         $(this).toggle('.invisible');
+        //     });
+        //     $('h3').click(function() {
+        //         $(this).next().toggle('.invisible');
+        //     });
+        // });
+
+        //  $('document').ready(function() {
+        //     $('#Denali').click(function() {
+        //         $('#Denali-text').fadeToggle();
+        //     });
+        //     $('#Yellowstone').click(function() {
+        //         $('#Yellowstone-text').fadeToggle();
+        //     });
+        //     $('#Yosemite').click(function() {
+        //         $('#Yosemite-text').fadeToggle();
+        //     });
+        // });
+
+        $('document').ready(function() {
+            $('#Denali').click(function() {
+            $('#Denali-text').slideToggle();
+            });
+            $('#Yellowstone').click(function() {
+            $('#Yellowstone-text').slideToggle();
+            });
+            $('#Yosemite').click(function() {
+            $('#Yosemite-text').slideToggle();
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h1>10 facts about National Parks</h1>
+    <div class="centered important highlighted">
+    </div>
+    <div>
+        <h2>National Parks are cool!</h2>
+        <d1>
+            <dt>1. What is the combined area of the National Parks?</dt>
+            <dd class = "invisible">As you may know, the National Park Service sets aside land for all of us to enjoy in its natural state. How much, you ask? 51 million acres! About the size of Kansas.</dd><br>
+
+            <dt>2. What was the first National Park?</dt>
+            <dd class = "invisible">The world’s first national park, Yellowstone, was created in 1872 by President Ulysses S. Grant. Its caretakers – the cavalry.</dd><br>
+            
+            <dt>3. Are that exotic creatures within the parks?</dt>
+            <dd class = "invisible">The largest living things in the world are in National Parks: Sequoia trees and Alaskan brown bears (the world’s largest living carnivores).</dd><br>
+            
+            <dt>4. What is the largest National Park?</dt>
+            <dd class = "invisible">Wrangell-St. Elias National Park and Preserve in Alaska is the largest park in the country. At six times the size of Yellowstone, it is the meeting point of four major mountain ranges and includes nine of the 16 highest peaks in the U.S. The preserve contains three climate zones, which means that it has everything from giant glaciers to wetlands to one of the largest active volcanoes in North America.</dd><br>
+
+            <dt>5. What is an interesting fact about the parks?</dt>
+            <dd class = "invisible">The redwoods at the Redwood National and State Parks — in Oregon and on the north coast of California — are the tallest trees on the planet. Many of them stand more than 30 stories high. Up until 2006, the 370-ft. Stratosphere Giant held the title for tallest tree on Earth, but three others — the Hyperion (378.1 ft.), Helios (376.3 ft.) and Icarus (371.2 ft.) — superseded it when they were discovered in Eureka, Calif.</dd><br>
+
+            <dt>6. Does every state have a National Park?</dt>
+            <dd class = "invisible">Poor Delaware. It's the only state in the country not to have a national park, monument or any other site in the federal system.</dd><br>
+
+            <dt>7. How many people go every year?</dt>
+            <dd class = "invisible">281 million: The average number of people that visit a park every year.</dd><br>
+
+            <dt>8. What is the difference between a National Park and a National Monument?</dt>
+            <dd class = "invisible"> Sometimes national parks and national monuments are confused. National parks are chosen for their natural beauty, unique geological features, and unusual ecosystems. National monuments are chosen for their historical or archeological significance.</dd><br>
+
+            <dt>9. What is the lowest and highest points in any park?</dt>
+            <dd class = "invisible">Death Valley National Park, which has the lowest elevation in the U.S. at 282 feet below sea level, is only 76 miles from Mount Whitney, the highest point in the contiguous U.S. at 14,505 feet.</dd><br>
+
+            <dt>10. What is a must go to place in any park?</dt>
+            <dd class = "invisible">Crater Lake, the U.S.’ deepest lake and seventh deepest in the world, took 250 years of rain and snow accumulation to reach its current water level.</dd><br>
+        </d1>
+
+        <h3 id = "Denali">Denali Naitonal Park</h3>
+            <ul id = "Denali-text">
+                <li>It is located in Alaska.</li>
+                <li>Contains Mt. Mckinely, which is a must see attraction.</li>
+                <li>The park encompasses more than 6 million acres.</li>
+                <li>It was established on February 26, 1917.</li>
+            </ul>
+        <h3 id = "Yellowstone">Yellowstone National Park</h3>
+            <ul id = "Yellowstone-text">
+                <li>World's First National Park</li>
+                <li>It is located in: 96 % in Wyoming, 3 % in Montana, 1 % in Idaho</li>
+                <li>A designated World Heritage Site and designated Biosphere Reserve</li>
+                <li>Approximately 5% of park is covered by water; 15% is grassland; and 80% is forest</li>
+            </ul>
+        <h3 id = "Yosemite">Yosemite National Park</h3>
+            <ul id = "Yosemite-text">
+                <li>The tallest waterfall in North America is located in Yosemite National Park. Its flow peaks in May and it has a 2,425 foot drop. Its name is Yosemite Falls.</li>
+                <li>20% of California's 7,000 plant species are found within Yosemite.</li>
+                <li>There are at least 90 species of mammals in the park, including black bears, coyotes, gophers and chipmunks</li>
+                <li>Rock climbers have a lot of rock to climb. The most challenging might be El Capitan which has a 3,300 foot rock face.<li>
+            </ul>
+    </div>
+    <p class="centered important highlighted"></p>
+    <a href="#" id="invisible">Click to toggle the important information.</a>
+</body>
+</html>

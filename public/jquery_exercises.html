@@ -1,0 +1,101 @@
+<html>
+<head>
+
+
+  <title>Example jQuery Page</title>
+    
+    <script src="/js/jquery.min.js"></script>
+
+    <script type = "text/javascript">
+	</script>
+
+	<style>
+        .important {
+            text-align: center;
+        }
+    </style>
+
+    <style>
+        #header {
+            text-align: center;
+        }
+    </style>
+
+    <script>
+	// 	$('document').ready(function() {
+ //    		$(".important , #list , #header").css('background-color', '#FF0');
+ //    	});
+	</script>
+
+	<script>
+ //        $('document').ready(function() {
+ //            $('#list').css('font-size', '20px');
+ //        });
+ // </script>
+
+    <script>
+  //   	$('document').ready(function() {
+  //   	var contents = $('#important').html();
+  //   	alert(contents);
+		// });
+	</script>
+
+
+	<script>
+		$('document').ready(function() {
+  			$('#header').click( function() {
+    			$(this).css('background', '#aaa')
+ 			} );
+  		});
+
+    </script>
+
+    <script>
+    	$('document').ready(function() {
+        	$('#paragraph').dblclick(function() {
+                $(this).css('font-size', '18px');
+            });
+        });
+    </script>
+
+    <script>
+    	$('document').ready(function() {
+    		$('#list').hover(
+        		function() {
+            	$(this).css('background-color', '#FF0');
+        	},
+        		function() {
+            	$(this).css('background-color', '#FFF');
+        	}
+    	);
+	});
+    </script>
+
+</head>
+
+<body>
+
+    <h1 id="header">Hello Codeup</h1>
+
+    <div>
+
+      	<p>Jquery Test!</p>
+
+    </div>
+
+    <p id="paragraph">
+    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere pretium metus, at consectetur nisl rhoncus sit amet. Sed tristique sapien nec congue facilisis. Vivamus non placerat ligula. Curabitur cursus ac mauris a tempus. Vivamus vel sem vel justo feugiat semper eget nec diam. Curabitur sed enim blandit, egestas libero non, semper leo. Sed hendrerit ac purus a lobortis. 
+    </p>
+
+    <ul id ="list">
+
+    	<li id ="list-one"> List One </li>
+    	<li id ="list-two"> List Two </li>
+
+    </ul>
+
+    <div>
+    </div>
+
+
+</body>
